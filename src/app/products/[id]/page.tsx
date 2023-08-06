@@ -32,7 +32,7 @@ const ProductPage = async ({ params: { id } }: ProductPageProps) => {
   const product = await getProduct(id);
 
   return (
-    <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
+    <div className="flex flex-col items-center gap-4 lg:flex-row lg:items-center">
       <Image
         src={product.imageUrl}
         width={500}
